@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Rubbish Removals - Professional Rubbish Removal Services in Melbourne</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+        .banner-bg {
+            background-image: url('https://www.carerubbishremovals.com.au/wp-content/uploads/2025/08/form-bg-image-new.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .text-shadow-custom {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: #fff;
+            margin: auto;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 90%;
+            width: 500px;
+            animation: fadeIn 0.3s ease-out;
+        }
+        .close-button {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close-button:hover,
+        .close-button:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border-left-color: #10B981;
+            animation: spin 1s ease infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-lg py-4 fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center mb-4 sm:mb-0">
+                <img src="https://www.carerubbishremovals.com.au/wp-content/uploads/2022/05/logo.gif" alt="Care Rubbish Removals Logo" class="h-12 w-auto">
+                <h1 class="ml-3 text-2xl font-bold text-gray-900">Care Rubbish Removals</h1>
+            </div>
+            <!-- Navigation -->
+            <nav class="flex flex-wrap justify-center sm:justify-end gap-y-2 gap-x-6 text-sm font-medium">
+                <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">About Us</a>
+                <a href="#services" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Services</a>
+                <a href="#reviews" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Reviews</a>
+                <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <!-- Hero Section with Banner Image -->
+        <section class="banner-bg h-[60vh] flex items-center justify-center text-center text-white relative">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="relative z-10 px-4">
+                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-shadow-custom mb-4">Professional Rubbish Removal in Melbourne</h2>
+                <p class="text-lg sm:text-xl font-medium text-shadow-custom">
+                    Your trusted partner for efficient and affordable rubbish removal services.
+                </p>
+                <a href="https://www.carerubbishremovals.com.au/" target="_blank">
+                <button class="mt-8 inline-block px-8 py-4 bg-green-500 hover:bg-green-600 transition-colors duration-300 text-white font-semibold rounded-full shadow-lg">
+                    Visit Website
+                </button>
+            </a>
+            </div>
+        </section>
+
+        <!-- Main Content Section -->
+        <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-16" id="about">
+            <div class="bg-white rounded-xl shadow-lg p-8 sm:p-12 lg:p-16 text-center">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">About Us</h3>
+                <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                    Care Rubbish Removals is a Melbourne-based business dedicated to providing top-quality rubbish removal solutions. We pride ourselves on our professionalism, reliability, and commitment to responsible waste disposal. Our team is equipped to handle everything from household junk to green waste, ensuring your space is clean and tidy.
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="bg-gray-100 py-16" id="services">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Services</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <a href="https://www.carerubbishremovals.com.au/services/rubbish-removal/" target="_blank" class="block bg-white rounded-xl shadow-lg p-6 text-center transition-transform transform hover:scale-105 hover:shadow-xl group">
+                        <svg class="h-16 w-16 text-green-500 mx-auto mb-4 transition-colors duration-300 group-hover:text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-2 3m0 0l-2-3m2 3v10m-3-10l2 3m-2-3l-2-3m2 3V9a2 2 0 012-2h2a2 2 0 012 2v2m-4-2H5a2 2 0 00-2 2v2a2 2 0 002 2h2m0 0l-2 3m0 0l-2-3m2 3v-3m2-2h-3"></path></svg>
+                        <h4 class="text-xl font-semibold text-gray-800 group-hover:text-green-700 transition-colors duration-300">Rubbish Removal</h4>
+                    </a>
+                    <!-- Service Card 2 -->
+                    <a href="https://www.carerubbishremovals.com.au/services/furniture-removals/" target="_blank" class="block bg-white rounded-xl shadow-lg p-6 text-center transition-transform transform hover:scale-105 hover:shadow-xl group">
+                        <svg class="h-16 w-16 text-green-500 mx-auto mb-4 transition-colors duration-300 group-hover:text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0C6.184 6.184 5 4.88 5 3a2 2 0 012-2h8a2 2 0 012 2c0 1.88-1.184 3.184-2 4z"></path></svg>
+                        <h4 class="text-xl font-semibold text-gray-800 group-hover:text-green-700 transition-colors duration-300">Furniture Removals</h4>
+                    </a>
+                    <!-- Service Card 3 -->
+                    <a href="https://www.carerubbishremovals.com.au/services/appliance-removals/" target="_blank" class="block bg-white rounded-xl shadow-lg p-6 text-center transition-transform transform hover:scale-105 hover:shadow-xl group">
+                        <svg class="h-16 w-16 text-green-500 mx-auto mb-4 transition-colors duration-300 group-hover:text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v.5H8v-.5M12 2v10m0 0V22m0-12h4a2 2 0 012 2v5a2 2 0 01-2 2H8a2 2 0 01-2-2v-5a2 2 0 012-2h4z"></path></svg>
+                        <h4 class="text-xl font-semibold text-gray-800 group-hover:text-green-700 transition-colors duration-300">Appliance Removals</h4>
+                    </a>
+                    <!-- Service Card 4 -->
+                    <a href="https://www.carerubbishremovals.com.au/services/relocation/" target="_blank" class="block bg-white rounded-xl shadow-lg p-6 text-center transition-transform transform hover:scale-105 hover:shadow-xl group">
+                        <svg class="h-16 w-16 text-green-500 mx-auto mb-4 transition-colors duration-300 group-hover:text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m2-2h10m0 0l2-2m-2 2h-2m2-2V9m-4 12h-2m-2 0h2m-2 0l-2-2m2 2V9m-4 12v-2a2 2 0 012-2h2m0 0l2-2m-2 2V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2z"></path></svg>
+                        <h4 class="text-xl font-semibold text-gray-800 group-hover:text-green-700 transition-colors duration-300">Relocation Rubbish</h4>
+                    </a>
+                    <!-- Service Card 5 -->
+                    <a href="https://www.carerubbishremovals.com.au/services/backyard-rubbish-collection/" target="_blank" class="block bg-white rounded-xl shadow-lg p-6 text-center transition-transform transform hover:scale-105 hover:shadow-xl group">
+                        <svg class="h-16 w-16 text-green-500 mx-auto mb-4 transition-colors duration-300 group-hover:text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.484 9.388 5 8 5a4 4 0 100 8h.25M12 6.253C13.168 5.484 14.612 5 16 5a4 4 0 110 8h.25M8 10h.25m8 0h.25"></path></svg>
+                        <h4 class="text-xl font-semibold text-gray-800 group-hover:text-green-700 transition-colors duration-300">Backyard Rubbish Collection</h4>
+                    </a>
+                    <!-- Service Card 6 -->
+                    <a href="https://www.carerubbishremovals.com.au/services/pool-table-removal/" target="_blank" class="block bg-white rounded-xl shadow-lg p-6 text-center transition-transform transform hover:scale-105 hover:shadow-xl group">
+                        <svg class="h-16 w-16 text-green-500 mx-auto mb-4 transition-colors duration-300 group-hover:text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2-3-.895-3-2 1.343-2 3-2zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h4 class="text-xl font-semibold text-gray-800 group-hover:text-green-700 transition-colors duration-300">Pool Table Removal</h4>
+                    </a>
+                    <!-- Service Card 7 -->
+                    <a href="https://www.carerubbishremovals.com.au/services/piano-removal-and-disposal/" target="_blank" class="block bg-white rounded-xl shadow-lg p-6 text-center transition-transform transform hover:scale-105 hover:shadow-xl group">
+                        <svg class="h-16 w-16 text-green-500 mx-auto mb-4 transition-colors duration-300 group-hover:text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <h4 class="text-xl font-semibold text-gray-800 group-hover:text-green-700 transition-colors duration-300">Piano Removal And Disposal</h4>
+                    </a>
+                    <!-- Service Card 8 -->
+                    <a href="https://www.carerubbishremovals.com.au/services/same-day-rubbish-removal/" target="_blank" class="block bg-white rounded-xl shadow-lg p-6 text-center transition-transform transform hover:scale-105 hover:shadow-xl group">
+                        <svg class="h-16 w-16 text-green-500 mx-auto mb-4 transition-colors duration-300 group-hover:text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h4 class="text-xl font-semibold text-gray-800 group-hover:text-green-700 transition-colors duration-300">Same Day Rubbish Removal</h4>
+                    </a>
+                    <!-- Service Card 9 -->
+                    <a href="https://www.carerubbishremovals.com.au/services/junk-removal/" target="_blank" class="block bg-white rounded-xl shadow-lg p-6 text-center transition-transform transform hover:scale-105 hover:shadow-xl group">
+                        <svg class="h-16 w-16 text-green-500 mx-auto mb-4 transition-colors duration-300 group-hover:text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m2-2h10m0 0l2-2m-2 2h-2m2-2V9m-4 12h-2m-2 0h2m-2 0l-2-2m2 2V9m-4 12v-2a2 2 0 012-2h2m0 0l2-2m-2 2V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2z"></path></svg>
+                        <h4 class="text-xl font-semibold text-gray-800 group-hover:text-green-700 transition-colors duration-300">Junk Removal</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="bg-white py-16" id="reviews">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">What Our Clients Say</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Review Card 1 -->
+                    <div class="bg-gray-50 rounded-xl shadow-lg p-8">
+                        <div class="flex items-center justify-center mb-4">
+                            <svg class="h-5 w-5 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.489 7.41l6.574-.956L10 1l2.937 5.454 6.574.956-4.755 4.135 1.122 6.545z"/></svg>
+                            <svg class="h-5 w-5 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.489 7.41l6.574-.956L10 1l2.937 5.454 6.574.956-4.755 4.135 1.122 6.545z"/></svg>
+                            <svg class="h-5 w-5 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.489 7.41l6.574-.956L10 1l2.937 5.454 6.574.956-4.755 4.135 1.122 6.545z"/></svg>
+                            <svg class="h-5 w-5 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.489 7.41l6.574-.956L10 1l2.937 5.454 6.574.956-4.755 4.135 1.122 6.545z"/></svg>
+                            <svg class="h-5 w-5 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.489 7.41l6.574-.956L10 1l2.937 5.454 6.574.956-4.755 4.135 1.122 6.545z"/></svg>
+                        </div>
+                        <p class="text-gray-600 italic leading-relaxed text-center mb-4">
+                            "The team was incredibly professional and efficient. They cleared out all the old furniture from my apartment in no time. Highly recommend their services!"
+                        </p>
+                        <p class="text-gray-900 font-semibold text-center">- John D.</p>
+                    </div>
+                    <!-- Review Card 2 -->
+                    <div class="bg-gray-50 rounded-xl shadow-lg p-8">
+                        <div class="flex items-center justify-center mb-4">
+                            <svg class="h-5 w-5 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.489 7.41l6.574-.956L10 1l2.937 5.454 6.574.956-4.755 4.135 1.122 6.545z"/></svg>
+                            <svg class="h-5 w-5 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.489 7.41l6.574-.956L10 1l2.937 5.454 6.574.956-4.755 4.135 1.122 6.545z"/></svg>
+                            <svg class="h-5 w-5 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.489 7.41l6.574-.956L10 1l2.937 5.454 6.574.956-4.755 4.135 1.122 6.545z"/></svg>
+                            <svg class="h-5 w-5 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.489 7.41l6.574-.956L10 1l2.937 5.454 6.574.956-4.755 4.135 1.122 6.545z"/></svg>
+                            <svg class="h-5 w-5 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.489 7.41l6.574-.956L10 1l2.937 5.454 6.574.956-4.755 4.135 1.122 6.545z"/></svg>
+                        </div>
+                        <p class="text-gray-600 italic leading-relaxed text-center mb-4">
+                            "Fantastic service! They arrived on time and were very friendly. My backyard is now spotless after the green waste collection. Great value for money."
+                        </p>
+                        <p class="text-gray-900 font-semibold text-center">- Sarah W.</p>
+                    </div>
+                    <!-- Review Card 3 -->
+                    <div class="bg-gray-50 rounded-xl shadow-lg p-8">
+                        <div class="flex items-center justify-center mb-4">
+                            <svg class="h-5 w-5 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.489 7.41l6.574-.956L10 1l2.937 5.454 6.574.956-4.755 4.135 1.122 6.545z"/></svg>
+                            <svg class="h-5 w-5 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.489 7.41l6.574-.956L10 1l2.937 5.454 6.574.956-4.755 4.135 1.122 6.545z"/></svg>
+                            <svg class="h-5 w-5 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.489 7.41l6.574-.956L10 1l2.937 5.454 6.574.956-4.755 4.135 1.122 6.545z"/></svg>
+                            <svg class="h-5 w-5 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.489 7.41l6.574-.956L10 1l2.937 5.454 6.574.956-4.755 4.135 1.122 6.545z"/></svg>
+                            <svg class="h-5 w-5 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.489 7.41l6.574-.956L10 1l2.937 5.454 6.574.956-4.755 4.135 1.122 6.545z"/></svg>
+                        </div>
+                        <p class="text-gray-600 italic leading-relaxed text-center mb-4">
+                            "I needed a same-day service and Care Rubbish Removals delivered. They were prompt, respectful, and left no mess behind. Couldn't be happier with the result."
+                        </p>
+                        <p class="text-gray-900 font-semibold text-center">- Michael P.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12" id="contact">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <!-- Company Info -->
+            <div class="mb-6 md:mb-0">
+                <h4 class="text-xl font-bold text-white mb-4">Care Rubbish Removals</h4>
+                <p class="text-sm">
+                    Providing reliable and professional rubbish removal services across Melbourne, VIC.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="https://www.facebook.com/Care-Rubbish-Removals-104210955560052/" target="_blank" class="text-gray-300 hover:text-white transition-colors duration-300">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22H12c5.523 0 10-4.477 10-10z" clip-rule="evenodd" /></svg>
+                    </a>
+                    <a href="https://www.instagram.com/care_rubbish_removals/" target="_blank" class="text-gray-300 hover:text-white transition-colors duration-300">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 11.205A.405.405 0 0112 11.02c.224-.055.449-.074.675-.074.225 0 .45-.02.675.074a.405.405 0 01-.15.787c-.206-.05-.41-.05-.615 0a.405.405 0 01-.15-.787zM12 4.5c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5 7.5-3.358 7.5-7.5-3.358-7.5-7.5-7.5zM12 15c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3zM16.5 7a.5.5 0 100-1 .5.5 0 000 1z" clip-rule="evenodd" /></svg>
+                    </a>
+                </div>
+            </div>
+            <!-- Contact Details -->
+            <div>
+                <h4 class="text-xl font-bold text-white mb-4">Contact Details</h4>
+                <div class="space-y-2">
+                    <div class="flex items-center space-x-2">
+                        <svg class="h-5 w-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM4 10a6 6 0 1112 0 6 6 0 01-12 0zm4.586 2.586a2 2 0 012.828-2.828L13 11.172V7h-1.586l.293.293a1 1 0 01-1.414 1.414L10 9.414l-1.293-1.293a1 1 0 01-1.414 1.414L8.586 11.172l-1.293 1.293a1 1 0 011.414 1.414L10 12.586l1.293 1.293a1 1 0 01-1.414 1.414L10 13.586l-1.293 1.293a1 1 0 01-1.414-1.414L8.586 12.586z" clip-rule="evenodd"></path></svg>
+                        <p class="text-sm">Melbourne, VIC 3180</p>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg class="h-5 w-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.586a1 1 0 01.707.293l1.586 1.586A1 1 0 017.586 5H10a1 1 0 011 1v4a1 1 0 01-1 1h-1.414l-1.586 1.586a1 1 0 01-.707.293H3a1 1 0 01-1-1V3z"></path></svg>
+                        <a href="tel:0410462641" class="text-sm hover:text-white transition-colors duration-300">0410 462 641</a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg class="h-5 w-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 11.646l7.997-5.762A2 2 0 0016 4H4a2 2 0 00-1.997 1.884zM18 8.118v5.5a2 2 0 01-2 2H4a2 2 0 01-2-2v-5.5l8 5.762L18 8.118z"></path></svg>
+                        <a href="mailto:service@careremovals.com.au" class="text-sm hover:text-white transition-colors duration-300">service@careremovals.com.au</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Business Hours -->
+            <div>
+                <h4 class="text-xl font-bold text-white mb-4">Business Hours</h4>
+                <p class="text-sm">Mon - Sun: 7:30am - 7:30pm</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 mt-8 border-t border-gray-700 pt-8 text-center text-sm text-gray-500">
+            &copy; <span id="current-year"></span> Care Rubbish Removals. All rights reserved.
+        </div>
+    </footer>
+    
+    <!-- Quote Modal -->
+    <div id="quoteModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closeQuoteModal">&times;</span>
+            <h4 class="text-2xl font-bold mb-4">Get a ✨ Custom Quote ✨</h4>
+            <div id="quoteForm">
+                <p class="mb-4 text-gray-600">Tell us what you need to have removed, and we'll provide an instant, estimated quote.</p>
+                <textarea id="quoteInput" rows="4" class="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-green-500 transition-colors duration-300" placeholder="e.g., An old broken sofa, two chairs, and some boxes from my garage."></textarea>
+                <div class="mt-4 text-center">
+                    <button id="getQuoteButton" class="px-8 py-3 bg-green-500 hover:bg-green-600 transition-colors duration-300 text-white font-semibold rounded-full shadow-lg">
+                        Get Quote
+                    </button>
+                </div>
+            </div>
+            <div id="quoteResult" class="mt-6 text-center" style="display: none;">
+                <div class="spinner mx-auto" id="spinner"></div>
+                <div id="quoteText" class="p-4 bg-gray-50 rounded-lg text-gray-700 text-left" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Update copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Modal functionality
+        const modal = document.getElementById('quoteModal');
+        const openBtn = document.getElementById('openQuoteModal');
+        const closeBtn = document.getElementById('closeQuoteModal');
+        const getQuoteBtn = document.getElementById('getQuoteButton');
+        const quoteInput = document.getElementById('quoteInput');
+        const quoteForm = document.getElementById('quoteForm');
+        const quoteResult = document.getElementById('quoteResult');
+        const spinner = document.getElementById('spinner');
+        const quoteText = document.getElementById('quoteText');
+
+        openBtn.onclick = function() {
+            modal.style.display = 'flex';
+            quoteForm.style.display = 'block';
+            quoteResult.style.display = 'none';
+            quoteText.style.display = 'none';
+            quoteInput.value = '';
+        };
+
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        };
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        };
+
+        // Gemini API call
+        getQuoteBtn.onclick = async function() {
+            const userDescription = quoteInput.value.trim();
+            if (!userDescription) return;
+
+            // Show loading state
+            quoteForm.style.display = 'none';
+            quoteResult.style.display = 'block';
+            spinner.style.display = 'block';
+            quoteText.style.display = 'none';
+
+            const systemPrompt = `You are a professional rubbish removal quote generator for 'Care Rubbish Removals'. Based on the user's description of their rubbish, provide a concise, single-paragraph summary of the recommended service and an estimated quote range in AUD. Be encouraging and helpful. Example services: 'Rubbish Removal', 'Furniture Removals', 'Appliance Removals', 'Relocation Rubbish', 'Backyard Rubbish Collection', 'Pool Table Removal', 'Piano Removal And Disposal', 'Same Day Rubbish Removal', 'Junk Removal'. The company is in Melbourne, VIC.`;
+            const userQuery = `I need to remove: ${userDescription}`;
+            
+            const apiKey = "";
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+            const payload = {
+                contents: [{ parts: [{ text: userQuery }] }],
+                systemInstruction: { parts: [{ text: systemPrompt }] },
+            };
+
+            let response;
+            let retries = 0;
+            const maxRetries = 3;
+            const baseDelay = 1000;
+
+            while (retries < maxRetries) {
+                try {
+                    response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    if (response.status === 429) { // Too many requests
+                        retries++;
+                        await new Promise(resolve => setTimeout(resolve, baseDelay * Math.pow(2, retries)));
+                        continue;
+                    }
+                    if (!response.ok) {
+                        throw new Error(`API call failed with status: ${response.status}`);
+                    }
+                    break;
+                } catch (error) {
+                    retries++;
+                    if (retries >= maxRetries) {
+                        console.error('API call failed after multiple retries:', error);
+                        quoteText.innerHTML = "Sorry, we couldn't generate a quote right now. Please try again later or contact us directly.";
+                        quoteText.style.display = 'block';
+                        spinner.style.display = 'none';
+                        return;
+                    }
+                    await new Promise(resolve => setTimeout(resolve, baseDelay * Math.pow(2, retries)));
+                }
+            }
+
+            if (!response) {
+                console.error('No response received from API.');
+                quoteText.innerHTML = "Sorry, we couldn't generate a quote right now. Please try again later or contact us directly.";
+                quoteText.style.display = 'block';
+                spinner.style.display = 'none';
+                return;
+            }
+
+            const result = await response.json();
+            const quote = result.candidates?.[0]?.content?.parts?.[0]?.text || "No quote could be generated. Please provide more details.";
+
+            spinner.style.display = 'none';
+            quoteText.innerHTML = quote;
+            quoteText.style.display = 'block';
+        };
+
+    </script>
+
+</body>
+</html>
